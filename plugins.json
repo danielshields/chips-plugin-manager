@@ -1,0 +1,43 @@
+{
+  "$comment": "Source of truth for which CHIPS plugins client sites are offered. Client sites read this file from the main branch of danielshields/chips-plugin-manager, so adding a plugin here makes it available everywhere within a few hours. `slug` is the folder the plugin installs into; `main_file` is the primary PHP file inside it, which is NOT always named after the repo.",
+  "plugins": [
+    {
+      "slug": "chips-plugin-manager",
+      "repo": "danielshields/chips-plugin-manager",
+      "main_file": "chips-plugin-manager.php",
+      "branch": "main",
+      "name": "CHIPS Plugin Manager",
+      "description": "Installs and updates CHIPS utility plugins directly from their public GitHub repositories.",
+      "author": "CHIPS"
+    },
+    {
+      "slug": "chips-wp_rte-input",
+      "repo": "danielshields/chips-wp_rte-input",
+      "main_file": "chips-rte-input.php",
+      "branch": "main",
+      "name": "CHIPS – Text Input with Format",
+      "description": "Adds a custom ACF field type (Floating RTE) with a minimal rich-text editor that shows a small tooltip on text selection (bold, italic, link, clear).",
+      "author": "CHIPS",
+      "icon": "icon-256x256.png",
+      "requires_plugins": ["advanced-custom-fields-pro"]
+    },
+    {
+      "slug": "chips-wp__overrides",
+      "repo": "danielshields/chips-wp__overrides",
+      "main_file": "chips-wp__overrides.php",
+      "branch": "main",
+      "name": "CHIPS WP Overrides",
+      "description": "Overriding the same things on every WP site (comments, Howdy, avatars, etc).",
+      "author": "Dan Shields"
+    },
+    {
+      "slug": "chips-duplicator",
+      "repo": "danielshields/chips-duplicator",
+      "main_file": "chips-duplicator.php",
+      "branch": "main",
+      "name": "CHIPS Duplicator",
+      "description": "Adds a “Duplicate” row action in wp-admin lists to clone posts/pages/custom post types into a new draft (including ACF/meta and taxonomies).",
+      "author": "CHIPS"
+    }
+  ]
+}
