@@ -19,7 +19,9 @@
       "description": "Adds a custom ACF field type (Floating RTE) with a minimal rich-text editor that shows a small tooltip on text selection (bold, italic, link, clear).",
       "author": "CHIPS",
       "icon": "icon-256x256.png",
-      "requires_plugins": ["advanced-custom-fields-pro"]
+      "requires_plugins": [
+        "advanced-custom-fields-pro"
+      ]
     },
     {
       "slug": "chips-wp__overrides",
@@ -37,6 +39,15 @@
       "branch": "main",
       "name": "CHIPS Duplicator",
       "description": "Adds a “Duplicate” row action in wp-admin lists to clone posts/pages/custom post types into a new draft (including ACF/meta and taxonomies).",
+      "author": "CHIPS"
+    },
+    {
+      "slug": "chips-smtp-configuration",
+      "repo": "danielshields/CHIPS-SMTP-Configuration",
+      "main_file": "chips-smtp-configuration.php",
+      "branch": "main",
+      "name": "CHIPS SMTP Configuration",
+      "description": "Routes wp_mail through authenticated SMTP. Reads credentials from wp-config constants or environment variables first, falling back to a settings page with a test-send.",
       "author": "CHIPS"
     }
   ]
